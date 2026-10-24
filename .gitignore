@@ -1,0 +1,8 @@
+# Local tooling artifacts
+.code-review-graph/
+.playwright-mcp/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

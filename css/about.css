@@ -1,0 +1,719 @@
+/* Additional styles for the About page */
+
+/* About Hero Section */
+.about-hero {
+    background-color: var(--secondary-black);
+    padding: 180px 0 80px;
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.about-hero h1 {
+    color: var(--primary-gold);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.separator {
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-gold);
+    margin: 0 auto 30px;
+}
+
+/* About Details Section */
+.about-details {
+    padding: 100px 0;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/Hameeda_background.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.about-intro {
+    width: 100%;
+}
+
+.intro-heading {
+    font-size: 2.8rem;
+    color: var(--primary-gold);
+    text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.about-main-content {
+    margin-top: 50px;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.about-image {
+    flex: 0 0 35%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Experience Badge */
+.experience-badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--primary-gold);
+    color: var(--secondary-black);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 0; /* No padding to ensure proper centering */
+}
+
+.exp-years {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.exp-text {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    max-width: 90%;
+    margin: 0 auto;
+    word-spacing: normal;
+}
+
+.about-text {
+    flex: 0 0 60%;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: var(--text-light);
+}
+
+.quote {
+    background-color: rgba(215, 199, 133, 0.2);
+    border-left: 4px solid var(--primary-gold);
+    padding: 25px;
+    margin: 30px 0;
+    position: relative;
+    backdrop-filter: blur(5px);
+}
+
+.quote i {
+    font-size: 2rem;
+    color: var(--primary-gold);
+    opacity: 0.5;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.quote p {
+    font-style: italic;
+    margin-left: 30px;
+    margin-bottom: 0;
+    color: var(--text-light);
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: var(--primary-gold);
+    margin: 30px 0 15px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.vision {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Signature and Badges */
+.signature-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.signature-title-image {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    margin: 0 0 20px auto;
+    filter: brightness(1.2);
+}
+
+.badges-showcase {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.signature-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.signature-badge {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.signature-badge:hover {
+    transform: scale(1.1);
+}
+
+/* Specialization Section */
+.specialization {
+    padding: 100px 0;
+    background-color: var(--secondary-black);
+    color: var(--text-light);
+}
+
+.specialization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.spec-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(215, 199, 133, 0.1);
+    height: 100%;
+}
+
+.spec-item:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.spec-icon {
+    font-size: 2.5rem;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+}
+
+.spec-item h3 {
+    font-size: 1.4rem;
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+}
+
+.spec-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Journey Section */
+.journey {
+    padding: 100px 0;
+    background-color: var(--light-bg);
+}
+
+.journey .section-header p {
+    color: var(--secondary-black);
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+.journey-subtitle {
+    text-align: center;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-bottom: 60px;
+    color: var(--secondary-black);
+}
+
+/* Timeline style journey */
+.journey-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.journey-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--primary-gold);
+    transform: translateX(-50%);
+}
+
+.journey-item {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.journey-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    width: 70px;
+    height: 70px;
+    background-color: var(--primary-gold);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 0 0 6px var(--light-bg);
+}
+
+.timeline-icon i {
+    color: var(--secondary-black);
+    font-size: 1.8rem;
+}
+
+.timeline-content {
+    width: 45%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-content.right {
+    margin-left: auto;
+}
+
+.timeline-content h3 {
+    font-size: 1.6rem;
+    color: var(--secondary-black);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.timeline-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-gold);
+}
+
+.timeline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.timeline-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.timeline-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-gold);
+}
+
+.program-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.program-list li {
+    background-color: rgba(215, 199, 133, 0.1);
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.program-list li::before {
+    left: 12px;
+}
+
+.program-list li:hover {
+    background-color: rgba(215, 199, 133, 0.2);
+    transform: translateX(5px);
+}
+
+.journey-item:hover .timeline-content {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1100px) {
+    .profile-section {
+        gap: 40px;
+    }
+
+    .about-image {
+        flex: 0 0 40%;
+    }
+
+    .about-text {
+        flex: 0 0 55%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .specialization-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image {
+        width: 70%;
+        max-width: 500px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .signature-section {
+        align-items: center;
+    }
+
+    .signature-badges {
+        justify-content: center;
+    }
+
+    /* Journey section adjustments */
+    .journey-timeline::before {
+        left: 30px;
+    }
+
+    .timeline-icon {
+        left: 30px;
+        transform: translateX(0);
+    }
+
+    .timeline-content {
+        width: calc(100% - 80px);
+        margin-left: 80px !important;
+    }
+
+    .program-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* General section spacing */
+    .about-hero,
+    .about-details,
+    .specialization,
+    .journey {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    /* About Hero */
+    .about-hero {
+        padding: 140px 0 60px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.8rem;
+    }
+
+    /* About Details */
+    .about-image {
+        width: 90%;
+    }
+
+    .about-text h3 {
+        text-align: center;
+    }
+
+    .vision {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .experience-badge {
+        width: 100px;
+        height: 100px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .exp-years {
+        font-size: 2rem;
+        margin-bottom: 3px;
+    }
+
+    .exp-text {
+        font-size: 0.65rem;
+    }
+
+    .signature-title-image {
+        max-width: 250px;
+        margin: 0 auto 20px auto;
+    }
+
+    /* Specialization Section */
+    .specialization-grid {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+
+    .spec-item {
+        padding: 25px;
+    }
+
+    .spec-icon {
+        font-size: 2.2rem;
+    }
+
+    /* Journey Section */
+    .journey .section-header p {
+        font-size: 1.1rem;
+    }
+
+    .journey-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+    }
+
+    .timeline-content {
+        padding: 25px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .journey-item {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* About Hero */
+    .about-hero {
+        padding: 120px 0 50px;
+    }
+
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    /* About Details */
+    .about-details {
+        padding: 60px 0;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .quote {
+        padding: 20px 15px 20px 25px;
+    }
+
+    .quote i {
+        font-size: 1.5rem;
+        top: 10px;
+        left: 10px;
+    }
+
+    .quote p {
+        margin-left: 20px;
+        font-size: 0.95rem;
+    }
+
+    .vision {
+        font-size: 1.1rem;
+    }
+
+    .experience-badge {
+        width: 80px;
+        height: 80px;
+        padding: 15px;
+    }
+
+    .exp-years {
+        font-size: 1.6rem;
+        margin-bottom: 2px;
+    }
+
+    .exp-text {
+        font-size: 0.55rem;
+        letter-spacing: 0.25px;
+    }
+
+    .signature-badge {
+        height: 40px;
+    }
+
+    .signature-title-image {
+        max-width: 200px;
+        margin: 0 auto 20px auto;
+    }
+
+    /* Specialization */
+    .specialization {
+        padding: 60px 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .journey .section-header p {
+        font-size: 1rem;
+    }
+
+    .spec-item {
+        padding: 20px;
+    }
+
+    .spec-icon {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .spec-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .spec-item p {
+        font-size: 0.95rem;
+    }
+
+    /* Journey Section */
+    .journey {
+        padding: 60px 0;
+    }
+
+    .journey-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .timeline-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .timeline-icon i {
+        font-size: 1.2rem;
+    }
+
+    .timeline-content {
+        width: calc(100% - 60px);
+        margin-left: 60px !important;
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .timeline-list li {
+        font-size: 0.95rem;
+        padding-left: 20px;
+    }
+
+    .program-list {
+        gap: 8px;
+    }
+
+    .program-list li {
+        padding: 8px 8px 8px 25px;
+    }
+
+    /* CTA Section */
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    /* WhatsApp Button (about-page override; base styles live in styles.css) */
+    .whatsapp-button {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-button i {
+        font-size: 1.4rem;
+    }
+
+    .whatsapp-tooltip {
+        top: -40px;
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+}
