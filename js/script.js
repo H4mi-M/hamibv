@@ -52,8 +52,8 @@ if (parallaxContent && !window.matchMedia('(prefers-reduced-motion: reduce)').ma
 
     const updateParallax = () => {
         const scrolled = window.scrollY;
-        parallaxContent.style.transform = `translateY(${scrolled * 0.35}px)`;
-        parallaxContent.style.opacity = Math.max(1 - scrolled / 600, 0);
+        parallaxContent.style.transform = `translateY(${scrolled * 0.18}px)`;
+        parallaxContent.style.opacity = Math.max(1 - scrolled / 900, 0);
         parallaxTicking = false;
     };
 
