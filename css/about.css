@@ -7,6 +7,7 @@
     text-align: center;
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    overflow: hidden;
 }
 
 .about-hero h1 {
@@ -480,6 +481,11 @@
 
     .about-hero h1 {
         font-size: 2.8rem;
+    }
+
+    /* Fixed backgrounds are janky/unsupported on mobile */
+    .about-details {
+        background-attachment: scroll;
     }
 
     /* About Details */
