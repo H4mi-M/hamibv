@@ -1,0 +1,7 @@
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+.code-review-graph
+.playwright-mcp
+.vscode
